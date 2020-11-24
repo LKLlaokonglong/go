@@ -1,0 +1,17 @@
+server:
+  port: 8887
+  address: 0.0.0.0
+  tomcat:
+    accept-count: 150
+    threads:
+      max: 250
+spring:
+  datasource:
+    name: demo
+    url: jdbc:mysql://localhost:3306/...?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+mybatis:
+  mapper-locations: classpath:mapper/*.xml
+  type-aliases-package: com.aeo.go.bean
